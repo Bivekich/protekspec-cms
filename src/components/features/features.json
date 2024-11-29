@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_features_features",
+  "info": {
+    "displayName": "features"
+  },
+  "options": {},
+  "attributes": {
+    "feature1": {
+      "type": "text"
+    },
+    "feature2": {
+      "type": "text"
+    },
+    "feature3": {
+      "type": "text"
+    },
+    "feature4": {
+      "type": "text"
+    }
+  }
+}

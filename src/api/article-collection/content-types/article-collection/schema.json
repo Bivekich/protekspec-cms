@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_collections",
+  "info": {
+    "singularName": "article-collection",
+    "pluralName": "article-collections",
+    "displayName": "Article Collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Published_Date": {
+      "type": "datetime"
+    },
+    "author": {
+      "type": "string"
+    }
+  }
+}

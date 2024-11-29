@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contacts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Address": {
+      "type": "text",
+      "required": true
+    },
+    "WorkHours": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Phone": {
+      "type": "string",
+      "required": true
+    },
+    "MapURL": {
+      "type": "text"
+    },
+    "WhatsAppLink": {
+      "type": "string"
+    },
+    "TelegramLink": {
+      "type": "string"
+    }
+  }
+}

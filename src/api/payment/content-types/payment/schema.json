@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "singularName": "payment",
+    "pluralName": "payments",
+    "displayName": "Payment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LegalName": {
+      "type": "string"
+    },
+    "INN": {
+      "type": "string"
+    },
+    "OGRN": {
+      "type": "string"
+    },
+    "KPP": {
+      "type": "string"
+    },
+    "LegalAddress": {
+      "type": "text"
+    }
+  }
+}
