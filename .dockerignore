@@ -1,0 +1,26 @@
+# Исключаем зависимости Node.js, они будут установлены внутри контейнера
+node_modules/
+
+# Исключаем файлы сборки, они будут созданы внутри контейнера
+build/
+dist/
+
+# Исключаем файлы конфигурации окружения, они будут переданы при запуске контейнера
+.env
+*.env
+
+# Исключаем системные и IDE файлы
+.git/
+.gitignore
+.dockerignore
+Dockerfile
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

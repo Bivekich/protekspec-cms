@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  strapi:
+    container_name: protekspec-cms # Имя контейнера
+    build: .
+    image: protekspec-cms # Имя образа, которое будет создано
+    restart: unless-stopped
+    env_file:
+      - .env # Указываем Docker Compose использовать файл .env из текущей директории на хосте
+    ports:
+      - '1337:1337' # Проброс порта
+    volumes:
+      - ./public/uploads:/app/public/uploads # Монтируем папку uploads для сохранения файлов
+
+volumes:
+  strapi-data: # Опционально, если нужно сохранять данные в volume (например, для SQLite, но не для uploads)
