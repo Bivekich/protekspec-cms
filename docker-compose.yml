@@ -9,9 +9,14 @@ services:
     env_file:
       - .env # Указываем Docker Compose использовать файл .env из текущей директории на хосте
     ports:
-      - '1337:1337' # Проброс порта
+      - '1338:1338' # Изменяем проброс порта на 1338:1338
     volumes:
       - ./public/uploads:/app/public/uploads # Монтируем папку uploads для сохранения файлов
+    deploy: # Добавляем секцию deploy для ограничений
+      resources:
+        limits:
+          cpus: '0.5' # Ограничение CPU (50% одного ядра)
+          memory: 512M # Ограничение RAM (512 Мегабайт)
 
 volumes:
   strapi-data: # Опционально, если нужно сохранять данные в volume (например, для SQLite, но не для uploads)
