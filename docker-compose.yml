@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  strapi:
+    container_name: protekspec-cms
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./public/uploads:/app/public/uploads
+    env_file:
+      - stack.env
+    ports:
+      - "3009:1337"
+    networks:
+      - protekspec-network
+
+networks:
+  protekspec-network:
+    driver: bridge 
